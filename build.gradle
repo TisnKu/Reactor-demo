@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'thoughtworks'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url 'http://repo.spring.io/milestone' }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile('org.junit.jupiter:junit-jupiter-api:5.2.0')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.2.0')
+    compile "io.projectreactor:reactor-core:3.2.0.M4"
+    testCompile("io.projectreactor:reactor-test:3.2.0.M4")
+}
